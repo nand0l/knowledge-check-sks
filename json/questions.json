@@ -1,0 +1,183 @@
+{
+    "courseTitle": "Architecting Cloud Solutions on AWS",
+    "moduleTitle": "Module 1 - Review Architecting Concepts",
+    "questionSet": [
+      {
+        "questionText": "Which of the following is NOT a core architectural principle discussed in the module?",
+        "explanation": "The module discusses Cost Optimizing, Performance Efficiency, Reliability, Security and Operational Excellence as core architectural principles, but does not mention Scalability.",
+        "answerOptions": [
+          {
+            "answerText": "Scalability",
+            "isCorrect": true
+          },
+          {
+            "answerText": "Cost Optimizing",
+            "isCorrect": false
+          },
+          {
+            "answerText": "Performance Efficiency", 
+            "isCorrect": false
+          },
+          {
+            "answerText": "Operational Excellence",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "questionText": "According to the module, which principle states that applications should be designed to use computing resources efficiently and be able to handle greater volumes of work without substantial changes?",  
+        "explanation": "The module defines Performance Efficiency as architects ensuring that applications can handle greater volumes of work and use computing resources efficiently without substantial changes. This definition matches the principle of Performance Efficiency.",
+        "answerOptions": [
+         {
+            "answerText": "Cost Optimizing",
+            "isCorrect": false  
+          },
+          {
+            "answerText": "Performance Efficiency",
+            "isCorrect": true
+          }, 
+          {
+            "answerText": "Reliability",
+            "isCorrect": false
+          },
+          {
+            "answerText": "Security", 
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "questionText": "Which principle aims to design for failure and make resilient architectures that can withstand various failure scenarios?",
+        "explanation": "The module states that Reliability aims to design systems to withstand failures through techniques like failover and redundancy. This definition matches the principle of Reliability.",
+        "answerOptions": [
+          {
+            "answerText": "Operational Excellence",
+            "isCorrect": false
+          },
+          {
+            "answerText": "Cost Optimizing",
+            "isCorrect": false
+          },
+          { 
+            "answerText": "Reliability",
+            "isCorrect": true
+          },
+          {
+            "answerText": "Performance Efficiency",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "questionText": "According to the module, operational excellence in architecture means which of the following?",
+        "explanation": "The module defines operational excellence as designing systems to be operated and managed efficiently through automation and visibility. This matches the emphasis on automation and visibility in the definition provided for Operational Excellence.", 
+        "answerOptions": [
+          {
+            "answerText": "Designing for failure tolerance",
+            "isCorrect": false
+          },
+          {
+            "answerText": "Automating operations and management through visibility",
+            "isCorrect": true  
+          },
+          {
+            "answerText": "Optimizing total cost of computing resources", 
+            "isCorrect": false
+          },
+          {
+            "answerText": "Designing for high throughput without changes",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "questionText": "Which principle aims to reduce infrastructure costs through economies of scale provided by cloud vendors?",
+        "explanation": "The module states that Cost Optimizing involves leveraging shared resources and purchasing strategies to reduce costs. This emphasizes reducing costs through the economies offered by cloud vendors, which aligns with the definition of Cost Optimizing.",
+        "answerOptions": [
+          {
+            "answerText": "Operational Excellence",
+            "isCorrect": false
+          },
+          {  
+            "answerText": "Cost Optimizing",
+            "isCorrect": true
+          },
+          {
+            "answerText": "Performance Efficiency",
+            "isCorrect": false
+          },
+          {
+            "answerText": "Reliability",
+            "isCorrect": false
+          }
+        ]
+      },
+      {  
+        "questionText": "According to the module, Amazon's Well-Architected Framework has which core categories?",
+        "explanation": "The module states that AWS's Well-Architected Framework has operational excellence, security, reliability, performance efficiency and cost optimization as the five core categories. This matches the definition provided in the question.",
+        "answerOptions": [
+          {
+            "answerText": "Cost optimization, performance, reliability, scaling and durability", 
+            "isCorrect": false
+          },
+          {
+            "answerText": "Operational excellence, security, reliability, performance efficiency, and cost optimization",  
+            "isCorrect": true
+          },
+          {
+            "answerText": "Security, scalability, availability, maintainability and operational excellence",
+            "isCorrect": false
+          },
+          {
+            "answerText": "Performance, cost, reliability, security and maintainability",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "questionText": "Which of the following is not one of the design principles discussed in the AWS Well-Architected Framework?",
+        "explanation": "The module does not list scaling as one of the core categories of the AWS Well-Architected Framework. The other options listed are explicitly mentioned as categories.",
+        "answerOptions": [
+          {
+            "answerText": "Scalability",
+            "isCorrect": true
+          },
+          { 
+            "answerText": "Operational Excellence",
+            "isCorrect": false
+          },
+          {
+            "answerText": "Reliability", 
+            "isCorrect": false
+          },
+          {
+            "answerText": "Performance Efficiency",
+            "isCorrect": false
+          }  
+        ]
+      },
+      {
+        "questionText": "Which core principle involves balancing costs with performance needs and optimizing for reduced expenses?",
+        "explanation": "The module defines cost optimization as leveraging cloud vendor offerings to reduce costs through economies of scale. This refers to balancing costs and performance, making it the principle focusing on reduced expenses.",
+        "answerOptions": [
+          {
+            "answerText": "Performance Efficiency",
+            "isCorrect": false
+          },
+          {
+            "answerText": "Operational Excellence", 
+            "isCorrect": false
+          },
+          {
+            "answerText": "Cost Optimization",
+            "isCorrect": true
+          },  
+          {
+            "answerText": "Reliability",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+  

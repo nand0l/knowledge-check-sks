@@ -1,0 +1,160 @@
+:root {
+  --color-blue-primary: #389cd6;
+  --color-blue-secondary: #002db3;
+  --color-light-gray: #f0f1f1;
+  --color-light-blue: #94c6eb;
+  --color-dark-gray: #383a40;
+  --color-light-sky: #c0e1f6;
+  --color-medium-gray: #7c7c7c;
+  --color-gray: #828484;
+  --color-gray-light: #bcbcbc;
+  --color-gray-medium: #b4b4b4;
+}
+body,
+html {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Amazon Ember", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-light-gray);
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-gray);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: var(--color-gray);
+}
+
+.container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.container-fully {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Optional: if you want to center horizontally as well */
+  height: 100%; /* Ensure the parent has a defined height */
+}
+
+.app {
+  background-color: var(--color-blue-secondary);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(79, 32, 233, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(9, 17, 228, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  max-width: 650px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.score-section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+/* QUESTION/TIMER/LEFT SECTION */
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+button {
+  width: 100%;
+  font-size: 16px;
+  color: var(--color-light-gray);
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #1a2d41;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #7280b4;
+}
+
+.correct,
+.correct button {
+  background-color: #2f922f;
+}
+
+.correct button:hover {
+  background-color: #2f922f;
+}
+
+.incorrect,
+.incorrect button {
+  background-color: #ff3333;
+}
+
+.incorrect button:hover {
+  background-color: #ff3333;
+}

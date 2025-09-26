@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/amazon-ember");
+
+:root {
+  --color-blue-primary: #389cd6;
+  --color-blue-secondary: #002db3;
+  --color-light-gray: #f0f1f1;
+  --color-light-blue: #94c6eb;
+  --color-dark-gray: #383a40;
+  --color-light-sky: #c0e1f6;
+  --color-medium-gray: #7c7c7c;
+  --color-gray: #828484;
+  --color-gray-light: #bcbcbc;
+  --color-gray-medium: #b4b4b4;
+  --grey-s01: #070808;
+  --grey-s02: #101113;
+  --grey-s03: #181b1e;
+  --grey-s04: #212529;
+  --grey-s05: #2a2f34;
+  --grey-s06: #32393f;
+  --grey-s07: #3b424a;
+  --grey-s08: #444c54;
+  --grey-s09: #4d565f;
+  --grey-s10: #55606a;
+  --grey-s11: #5e6a75;
+  --grey-s12: #677380;
+  --grey-t03: #707d8b;
+  --grey-t01: #7a8794;
+  --grey-t02: #85919d;
+  --grey-t03: #909ba6;
+  --grey-t04: #9ba5ae;
+  --grey-t05: #a6aeb7;
+  --grey-t06: #b0b8c0;
+  --grey-t07: #bbc2c9;
+  --grey-t08: #c6ccd1;
+  --grey-t09: #d1d6da;
+  --grey-t10: #dcdfe3;
+  --grey-t11: #e7e9ec;
+  --grey-t12: #f2f3f4;
+  --grey-t13: #fdfdfd;
+  --amaranth-s01: #100003;
+  --amaranth-s02: #230006;
+  --amaranth-s03: #37000a;
+  --amaranth-s04: #4b000d;
+  --amaranth-s05: #5e0010;
+  --amaranth-s06: #720014;
+  --amaranth-s07: #850017;
+  --amaranth-s08: #99001b;
+  --amaranth-s09: #ad001e;
+  --amaranth-s10: #c00022;
+  --amaranth-s11: #d40025;
+  --amaranth-s12: #e80029;
+  --amaranth-t03: #fb002c;
+  --amaranth-t01: #ff103a;
+  --amaranth-t02: #ff234a;
+  --amaranth-t03: var(--c-amaranth);
+  --amaranth-t04: #ff4b6a;
+  --amaranth-t05: #ff5e7a;
+  --amaranth-t06: #ff728b;
+  --amaranth-t07: #ff859b;
+  --amaranth-t08: #ff99ab;
+  --amaranth-t09: #ffadbb;
+  --amaranth-t10: #ffc0cb;
+  --amaranth-t11: #ffd4db;
+  --amaranth-t12: #ffe8ec;
+  --amaranth-t13: var(--blue-t06) bfc;
+  --blue-t01: #020109;
+  --blue-t02: #07021b;
+  --blue-t03: #0c032e;
+  --blue-t04: #100440;
+  --blue-t05: #150652;
+  --blue-t06: #190765;
+  --blue-t07: #1e0877;
+  --blue-t08: #230a89;
+  --blue-t09: #270b9c;
+  --blue-t10: #2c0cae;
+  --blue-t11: #310dc0;
+  --blue-t12: #350fd3;
+  --blue-t13: var(--c-blue);
+  --blue-s01: #441aef;
+  --blue-s02: #532cf0;
+  --blue-s03: #623ef2;
+  --blue-s04: #7151f3;
+  --blue-s05: #8063f4;
+  --blue-s06: #8f75f5;
+  --blue-s07: #9e88f7;
+  --blue-s08: #ad9af8;
+  --blue-s09: #bbacf9;
+  --blue-s10: #cabffb;
+  --blue-s11: #d9d1fc;
+  --blue-s12: #e8e3fd;
+  --blue-t03: #f7f6fe;
+  --cream-t0: #fdf0e6;
+  --c-dark-navy: #212529;
+  --c-navy: #141c36;
+  --c-amaranth: #ff375a;
+  --c-white: var(--blue-t06);
+  --c-blue: #3a10e5;
+  --c-sky: #66c4ff;
+  --gainsboro: #dcdcdc;
+  --lightgrey: #d3d3d3;
+  --silver: #c0c0c0;
+  --darkgrey: #a9a9a9;
+  --grey: #808080;
+  --dimgrey: #696969;
+  --lightslategrey: #778899;
+  --slategrey: #708090;
+  --darkslategrey: #2f4f4f;
+  --black: #000000;
+  --background-color: var(--gainsboro);
+  --text-color-link-visited: var(--c-navy);
+  --c-text-color: var(--c-navy);
+  --basic-text-font: "Noto Sans", sans-serif;
+  --basic-header-font: "Montserrat", sans-serif;
+}
+
+* {
+  font-family: var(--basic-text-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--basic-header-font);
+  color: var(--c-amaranth);
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: #444;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #555;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  color: #444;
+  text-align: justify;
+}
+
+ul,
+ol {
+  margin-bottom: 1.2rem;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  background-color: #f8f9fa;
+  border-left: 4px solid #007acc;
+  font-style: italic;
+  color: #555;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.law-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #007acc;
+  margin-bottom: 0.5rem;
+  font-family: var(--basic-header-font);
+}
+
+.law-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  font-family: var(--basic-header-font);
+}
+
+.law-content {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+body,
+html {
+  margin: 0;
+  min-height: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #2c2c2c;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom, #f2f0eb 0%, #ffffff 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.container-fully {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Optional: if you want to center horizontally as well */
+  height: 100%;
+  /* Ensure the parent has a defined height */
+}
+
+.app {
+  background-color: #ffffff;
+  max-width: 800px;
+  min-height: 200px;
+  height: min-content;
+  padding: 60px 80px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.document-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.document-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  font-family: var(--basic-header-font);
+}
+
+.document-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.author {
+  font-size: 1rem;
+  color: #888;
+  font-style: italic;
+}
+
+.score-section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+/* QUESTION/TIMER/LEFT SECTION */
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+  color: var(--c-amaranth);
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  width: 100%;
+  font-size: 16px;
+  color: var(--color-light-gray);
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #1a2d41;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7280b4;
+}
+
+.correct,
+.correct button {
+  background-color: #2f922f;
+}
+
+.correct button:hover {
+  background-color: #2f922f;
+}
+
+.incorrect,
+.incorrect button {
+  background-color: #ff3333;
+}
+
+.incorrect button:hover {
+  background-color: #ff3333;
+}
+
+/* Re
+sponsive Design */
+@media (max-width: 768px) {
+  .app {
+    padding: 40px 30px;
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .document-title {
+    font-size: 2.2rem;
+  }
+
+  .law-number {
+    font-size: 2.5rem;
+  }
+
+  body,
+  html {
+    font-size: 16px;
+    padding: 20px 10px;
+  }
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+  font-family: var(--basic-header-font);
+}
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Links */
+a {
+  color: #007acc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: #007acc;
+}
+
+/* Emphasis */
+strong {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+em {
+  font-style: italic;
+  color: #555;
+}
+
+/* Section dividers */
+.section-divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 3rem 0;
+  border: none;
+}
+
+/* Introduction/Summary boxes */
+.intro-box {
+  background-color: #f0f8ff;
+  border: 1px solid #b3d9ff;
+  border-radius: 6px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.intro-box h3 {
+  margin-top: 0;
+  color: #0066cc;
+}
+
+/* Highlight boxes for important content */
+.highlight-box {
+  background-color: #fff9e6;
+  border-left: 4px solid #ffcc00;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 6px 6px 0;
+}
